@@ -21,16 +21,16 @@ public class AddItUpTest {
 		assertEquals(expected, AddItUp.add(listTest));
 	}
 	
-//	@Test
-//	public void whenNullReturn0() {	
-//		List<Object> listTest = new ArrayList<Object>();
-//		
-//		listTest.add(null);
-//		
-//		BigDecimal expected = new BigDecimal (0);
-//		
-//		assertEquals(expected, AddItUp.add(listTest));
-//	}
+	@Test
+	public void whenNullReturn0() {	
+		List<Object> listTest = new ArrayList<Object>();
+		
+		listTest.add(null);
+		
+		BigDecimal expected = new BigDecimal (0);
+		
+		assertEquals(expected, AddItUp.add(listTest));
+	}
 
 	@Test
 	public void whenOneIntegerIsInListReturnThatSameInteger() {
@@ -80,7 +80,7 @@ public class AddItUpTest {
 		listTest.add(Double.valueOf(29));
 		
 		BigDecimal expected = new BigDecimal (46);
-	
+		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 		assertEquals(expected, AddItUp.add(listTest));
 		
 	}
@@ -107,13 +107,13 @@ public class AddItUpTest {
 		listTest.add(BigDecimal.valueOf(29));
 		
 		BigDecimal expected = new BigDecimal (46);
-	
+		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 		assertEquals(expected, AddItUp.add(listTest));
 		
 	}
 	
 	@Test
-	public void whenOneStringIsInListReturnThatSameStringuble() {
+	public void whenOneStringIsInListReturnThatSameString() {
 		List<Object> listTest = new ArrayList<Object>();	
 		
 		listTest.add("19");
@@ -179,6 +179,4 @@ public class AddItUpTest {
 		
 		assertEquals(expected, AddItUp.add(listTest));
 	}
-
-
 }
