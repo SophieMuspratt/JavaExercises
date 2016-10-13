@@ -2,12 +2,10 @@ package exercises;
 
 import static org.junit.Assert.*;
 
-import java.io.ByteArrayOutputStream;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Rule;
 import org.junit.Test;
 
 public class AddItUpTest {
