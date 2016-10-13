@@ -1,6 +1,7 @@
 package exercises;
 
 import static org.junit.Assert.*;
+//Use assertThat
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,6 +11,10 @@ import org.junit.Test;
 
 public class AddItUpTest {
 	
+	//Remove static use in test and instantiate AddItUp class
+	
+	
+	//Tests should be in a TDD order
 	@Test
 	public void whenEmptyListIsUsedThenReturn0() {	
 		List<Object> listTest = new ArrayList<Object>();
@@ -30,6 +35,7 @@ public class AddItUpTest {
 		assertEquals(expected, AddItUp.add(listTest));
 	}
 	
+	//
 	@Test
 	public void handleMultipleArgumentsWithNullReturning0() {	
 		List<Object> listTest = new ArrayList<Object>();
@@ -97,6 +103,7 @@ public class AddItUpTest {
 		assertEquals(expected, AddItUp.add(listTest));
 	}
 
+	//Wrong test name
 	@Test
 	public void whenOneIntegerIsInListReturnThatSameInteger() {
 		List<Object> listTest = new ArrayList<Object>();	
@@ -123,6 +130,7 @@ public class AddItUpTest {
 		
 	}
 	
+	//Wrong test name
 	@Test
 	public void whenOneDoubleIsInListReturnThatSameDouble() {
 		List<Object> listTest = new ArrayList<Object>();	
@@ -150,6 +158,7 @@ public class AddItUpTest {
 		
 	}
 	
+	//Wrong test name
 	@Test
 	public void whenOneBigDecimalIsInListReturnThatSameBigDecimal() {
 		List<Object> listTest = new ArrayList<Object>();	
@@ -178,6 +187,7 @@ public class AddItUpTest {
 		
 	}
 	
+	//Wrong test name
 	@Test
 	public void whenOneStringIsInListReturnThatSameString() {
 		List<Object> listTest = new ArrayList<Object>();	
