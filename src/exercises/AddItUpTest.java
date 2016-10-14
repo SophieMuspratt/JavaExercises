@@ -1,6 +1,5 @@
 package exercises;
 
-//Use assertThat
 import static org.assertj.core.api.Assertions.assertThat;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,21 +9,17 @@ import org.junit.Test;
 
 public class AddItUpTest {
 
-	// Remove static use in test and instantiate AddItUp class
 	AddItUp addItUp = new AddItUp();
 
-	// Tests should be in a TDD order
 	@Test
 	public void whenEmptyListIsUsedThenReturn0() {
 		List<Object> listTest = new ArrayList<Object>();
 
 		BigDecimal expected = new BigDecimal(0);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
-	// Wrong test name
 	@Test
 	public void whenOneIntegerIsInListReturnABigDecimal() {
 		List<Object> listTest = new ArrayList<Object>();
@@ -33,7 +28,6 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(10);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 
 	}
@@ -48,11 +42,9 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(46);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
-	// Wrong test name
 	@Test
 	public void whenOneDoubleIsInListReturnABigDecimal() {
 		List<Object> listTest = new ArrayList<Object>();
@@ -62,7 +54,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(10.99);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -76,11 +67,10 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(46.13);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
-		// assertEquals(expected, addItUp.add(listTest));
+		
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
-	// Wrong test name
 	@Test
 	public void whenOneBigDecimalIsInListReturnABigDecimal() {
 		List<Object> listTest = new ArrayList<Object>();
@@ -90,7 +80,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(10.99);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -105,11 +94,9 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(46.01);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
-	// Wrong test name
 	@Test
 	public void whenOneStringIsInListReturnABigDecimal() {
 		List<Object> listTest = new ArrayList<Object>();
@@ -118,7 +105,6 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(19);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -133,7 +119,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(46.99);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -147,7 +132,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(40.99);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -162,7 +146,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(42.90);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -178,7 +161,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(43.90);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -190,7 +172,6 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(0);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -206,7 +187,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(42.90);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -218,7 +198,6 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(0);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -234,7 +213,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(42.90);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -246,7 +224,6 @@ public class AddItUpTest {
 
 		BigDecimal expected = new BigDecimal(0);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 
@@ -262,7 +239,6 @@ public class AddItUpTest {
 		BigDecimal expected = new BigDecimal(42.90);
 		expected = expected.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
-		// assertEquals(expected, addItUp.add(listTest));
 		assertThat(addItUp.add(listTest)).isEqualByComparingTo(expected);
 	}
 }
